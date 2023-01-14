@@ -11,7 +11,7 @@ import java.util.Random;
 public class number {
     Random random = new Random();
     /**
-     * @param 何数のリスト
+     * @param numberList 何数をリスト
      * 
      */
     int[] numberList;

@@ -17,15 +17,15 @@ public class compare_machine {
     int[] answer_number;
 
     /**
-     * @param if分が実行された回数をカウントする変数
+     * @param count if分が実行された回数をカウントする変数
      */
     int count = 0;
     /**
-     * @param ストライクされた回数を表す変数
+     * @param Strike ストライクされた回数を表す変数
      */
     int Strike = 0;
     /**
-     * @param ボールされた回数を表す変数
+     * @param Ball ボールされた回数を表す変数
      */
     int Ball = 0;
 
@@ -72,7 +72,7 @@ public class compare_machine {
      * 3ストライクになるとメッセージを送り、プログラムを終了させるメソッド。
      */
     public void exit() {
-        System.out.println("Congratulations! You cleared the game!");
+        System.out.println("Congratulations! You winned the game!");
         System.exit(0);
     }
 

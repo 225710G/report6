@@ -20,11 +20,17 @@ public class number {
      * 何数を三つ作り、それをリストの中に入れるメソッド
      */
     public void set_number() {
-        this.numberList = new int[] {
-                random.nextInt(9),
-                random.nextInt(9),
-                random.nextInt(9)
-        };
+        this.numberList = new int[3];
+        this.numberList[0] = random.nextInt(9);
+        this.numberList[1] = random.nextInt(9);
+        this.numberList[2] = random.nextInt(9);
+
+        while (this.numberList[0] == this.numberList[1] || this.numberList[1] == this.numberList[2]
+                || this.numberList[2] == this.numberList[0]) {
+            this.numberList[0] = random.nextInt(9);
+            this.numberList[1] = random.nextInt(9);
+            this.numberList[2] = random.nextInt(9);
+        }
     }
 
     /**

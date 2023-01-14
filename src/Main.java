@@ -14,3 +14,4 @@ public class Main {
         compare_machine.compare();
        }
 }
+ 

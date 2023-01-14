@@ -1,5 +1,7 @@
 package jp.ac.uryukyu.ie.e225710;
 
+import java.util.Arrays;
+
 /**
  * プレイヤーが入力した答えとコンピューターが設定した答えを比較して情報を教えるクラス。
  */
@@ -61,8 +63,9 @@ public class compare_machine {
         if (Ball == 0 && Strike == 0) {
             System.out.println("Out!");
         } else {
-            System.out.println("Strike : " + Strike + "Ball : " + Ball);
+            System.out.println("Strike : " + Strike + ", Ball : " + Ball);
         }
+        System.out.println(Arrays.toString(answer_number));
     }
 
     /**

@@ -41,6 +41,11 @@ public class console {
      * @return　三桁の数字を百の位、十の位、一の位に分解して作ったリスト。
      */
     public int[] insert(){
+        try {
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
         input();
         return this.input_number;
     }

@@ -1,6 +1,7 @@
 package jp.ac.uryukyu.ie.e225710;
 
 import java.util.Scanner;
+
 /**
  * プレイヤーから3桁の数字を入力してもらい、その数字を分解してリスト化させるクラス。またはインタフェース。
  * 
@@ -25,6 +26,7 @@ public class console {
     public void input() {
         this.strnum = in.next();
     }
+
     /**
      * 数字の文章を文字別に分け、その文字たちでリストを作るメソッド
      */

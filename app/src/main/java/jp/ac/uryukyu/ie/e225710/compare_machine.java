@@ -65,13 +65,13 @@ public class compare_machine {
         } else {
             System.out.println("Strike : " + Strike + ", Ball : " + Ball);
         }
-        System.out.println(Arrays.toString(answer_number));
     }
 
     /**
      * 3ストライクになるとメッセージを送り、プログラムを終了させるメソッド。
      */
     public void exit() {
+        System.out.println("The answer is " + Arrays.toString(answer_number) + "!");
         System.out.println("Congratulations! You winned the game!");
         System.exit(0);
     }

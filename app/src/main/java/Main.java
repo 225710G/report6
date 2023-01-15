@@ -1,5 +1,7 @@
 import jp.ac.uryukyu.ie.e225710.*;
 import java.util.InputMismatchException;
+import java.util.Arrays;
+
 
 /**
  * mainクラス
@@ -12,6 +14,7 @@ public class Main {
      */
     public static void main(String[] args) throws Exception {
         System.out.println("--------Bulls and Cows--------");
+        System.out.println("****In this game, there is no duplicate numbers.****");
         console console = new console();
         number number = new number();
         number.set_number();// 何数生成
@@ -19,7 +22,7 @@ public class Main {
         answer_number = number.return_number();
         for (int i = 0; i < 9; i++) {
             try {
-                System.out.println("Insert number.");
+                System.out.println("-----Insert number.-----");
                 String[] input_number = console.insert();
                 compare_machine compare_machine = new compare_machine(input_number, answer_number);// 両数字を比べる機械に入れる。
                 String num = console.return_num();
@@ -37,12 +40,15 @@ public class Main {
                 console = new console();
                 i--;
             } catch (Exception e) {
-                System.out.println("Duplicate numbers are not allowed");
+                System.out.println("Please check your answer.");
                 console = new console();
                 i--;
             }
 
         }
         System.out.println("You lose");
+        System.out.println("The answer is " + Arrays.toString(answer_number) + "!");
+        System.exit(0);
+
     }
 }

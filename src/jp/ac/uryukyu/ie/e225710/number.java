@@ -16,6 +16,7 @@ public class number {
      */
     int[] numberList;
 
+
     /**
      * 何数を三つ作り、それをリストの中に入れるメソッド
      */

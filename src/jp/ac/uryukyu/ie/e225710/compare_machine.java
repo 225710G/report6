@@ -10,7 +10,7 @@ public class compare_machine {
     /**
      * @param プレイヤーの答え
      */
-    int[] input_number;
+    String[] input_number;
     /**
      * @param 答え
      */
@@ -29,7 +29,7 @@ public class compare_machine {
      */
     int Ball = 0;
 
-    public compare_machine(int[] input_number, int[] answer_number) {
+    public compare_machine(String[] input_number, int[] answer_number) {
         this.input_number = input_number;
         this.answer_number = answer_number;
     }
@@ -41,7 +41,7 @@ public class compare_machine {
         for (int a = 0; a < 3; a++) {
             for (int i = 0; i < 3; i++) {
                 if (a == i) {
-                    if (this.answer_number[a] == this.input_number[i]) {
+                    if (this.answer_number[a] == Integer.parseInt(this.input_number[i])) {
                         Strike++;
                     }
                 }
@@ -53,7 +53,7 @@ public class compare_machine {
 
         for (int a = 0; a < 3; a++) {
             for (int i = 0; i < 3; i++) {
-                if (this.answer_number[a] == this.input_number[i]) {
+                if (this.answer_number[a] == Integer.parseInt(this.input_number[i])) {
                     count++;
                 }
             }

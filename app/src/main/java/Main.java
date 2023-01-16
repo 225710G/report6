@@ -2,7 +2,6 @@ import jp.ac.uryukyu.ie.e225710.*;
 import java.util.InputMismatchException;
 import java.util.Arrays;
 
-
 /**
  * mainクラス
  */
@@ -34,7 +33,11 @@ public class Main {
                         || Integer.parseInt(input_number[2]) == Integer.parseInt(input_number[0])) {
                     throw new Exception();
                 }
+                if (i != 8) {
+                    System.out.println("you have " + (8 - i) + " more chance");
+                }
                 compare_machine.compare();// compare開始＆結果int型ではないStringを文字に入れたとき。
+
             } catch (InputMismatchException e) {// 3桁数ではない数を入力したとき。
                 System.out.println("You can insert only three-digit number. ex)012, 235");
                 console = new console();

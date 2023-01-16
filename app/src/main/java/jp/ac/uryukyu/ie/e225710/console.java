@@ -23,7 +23,7 @@ public class console {
      * プレイヤーに数字を入力してもらうメソッド
      */
 
-    public void input() {
+    public void input() { 
         this.strnum = in.next();
     }
 
